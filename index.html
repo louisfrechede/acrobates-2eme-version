@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les Acrobates · Brasserie parisienne au 20 rue du Renard, face au Centre Pompidou. Cuisine maison, ambiance vintage, service continu 7h-2h.">
+    <meta name="keywords" content="brasserie Paris Marais, restaurant Beaubourg, restaurant rue du Renard, Les Acrobates Paris, brasserie 4ème, restaurant Centre Pompidou">
+    <meta name="author" content="Les Acrobates">
+
+    <meta property="og:title" content="Les Acrobates · Brasserie au cœur du Marais">
+    <meta property="og:description" content="Brasserie française face au Centre Pompidou. Service continu, ambiance vintage, cuisine maison.">
+    <meta property="og:image" content="assets/devanture.jpg">
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:url" content="https://www.lesacrobates.fr">
+    <meta property="og:locale" content="fr_FR">
+
+    <title>Les Acrobates · Brasserie parisienne · Le Marais, Paris IV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Les Acrobates",
+        "image": "https://www.lesacrobates.fr/assets/devanture.jpg",
+        "@id": "https://www.lesacrobates.fr",
+        "url": "https://www.lesacrobates.fr",
+        "telephone": "+33142729870",
+        "priceRange": "€€",
+        "servesCuisine": ["French", "Brasserie"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "20 Rue du Renard",
+            "addressLocality": "Paris",
+            "postalCode": "75004",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8590,
+            "longitude": 2.3520
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "07:00",
+                "closes": "02:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "08:00",
+                "closes": "00:00"
+            }
+        ],
+        "acceptsReservations": "True",
+        "menu": "https://www.lesacrobates.fr/#carte",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "1053"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top ribbon -->
+    <div class="ribbon">
+        <div class="ribbon__track">
+            <span>Service continu</span><span>·</span>
+            <span>7h — 2h, 7j/7</span><span>·</span>
+            <span>20 rue du Renard, Paris IV</span><span>·</span>
+            <span>Face au Centre Pompidou</span><span>·</span>
+            <span>Réservez au 01 42 72 98 70</span><span>·</span>
+            <span>Service continu</span><span>·</span>
+            <span>7h — 2h, 7j/7</span><span>·</span>
+            <span>20 rue du Renard, Paris IV</span><span>·</span>
+            <span>Face au Centre Pompidou</span><span>·</span>
+            <span>Réservez au 01 42 72 98 70</span><span>·</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo" aria-label="Les Acrobates - Accueil">
+                <span class="nav__logo-mark">L<span class="nav__logo-amp">·</span>A</span>
+                <span class="nav__logo-full">Les Acrobates</span>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="#histoire" data-link>Maison</a></li>
+                <li><a href="#carte" data-link>Carte</a></li>
+                <li><a href="#galerie" data-link>Ambiance</a></li>
+                <li><a href="#infos" data-link>Adresse</a></li>
+            </ul>
+            <a href="tel:+33142729870" class="nav__cta" data-magnetic>
+                <span class="nav__cta-dot"></span>
+                <span>Réserver · 01 42 72 98 70</span>
+            </a>
+            <button class="nav__burger" aria-label="Menu" id="burger">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__grid">
+            <div class="hero__left">
+                <p class="hero__eyebrow">
+                    <span class="hero__eyebrow-dot"></span>
+                    Brasserie parisienne · depuis le Marais
+                </p>
+
+                <h1 class="hero__title">
+                    <span class="hero__line" data-reveal-text>Une brasserie</span>
+                    <span class="hero__line hero__line--accent" data-reveal-text>d'équilibre,</span>
+                    <span class="hero__line" data-reveal-text>face à</span>
+                    <span class="hero__line hero__line--big" data-reveal-text>Beaubourg.</span>
+                </h1>
+
+                <p class="hero__sub">
+                    Cuisine maison, terrasse au soleil et bar ouvert sans interruption de 7h à 2h.
+                    Au 20 rue du Renard, à deux pas du Centre Pompidou.
+                </p>
+
+                <div class="hero__ctas">
+                    <a href="tel:+33142729870" class="btn btn--primary" data-magnetic>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>Réserver une table</span>
+                    </a>
+                    <a href="#carte" class="btn btn--ghost">
+                        <span>Découvrir la carte</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hero__scroll">
+                    <span class="hero__scroll-line"></span>
+                    <span class="hero__scroll-text">Faites défiler</span>
+                </div>
+            </div>
+
+            <div class="hero__right">
+                <div class="hero__photo hero__photo--main">
+                    <img src="assets/devanture.jpg" alt="Devanture Les Acrobates, 20 rue du Renard">
+                    <div class="hero__photo-tag">
+                        <span>20 rue du Renard</span>
+                        <span>·</span>
+                        <span>Paris 75004</span>
+                    </div>
+                </div>
+                <div class="hero__photo hero__photo--small">
+                    <img src="assets/terrasse.jpg" alt="Terrasse face à Beaubourg">
+                </div>
+                <div class="hero__sticker">
+                    <svg viewBox="0 0 100 100" class="hero__sticker-svg">
+                        <defs>
+                            <path id="circlePath" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"/>
+                        </defs>
+                        <text font-family="Fraunces" font-size="9" fill="currentColor" letter-spacing="2">
+                            <textPath href="#circlePath">CUISINE · MAISON · CUISINE · MAISON · </textPath>
+                        </text>
+                    </svg>
+                    <span class="hero__sticker-center">★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAT BAR -->
+    <section class="stats" aria-label="Les Acrobates en chiffres">
+        <div class="stats__inner">
+            <div class="stats__item">
+                <span class="stats__num" data-counter="4.6" data-decimals="1">0</span>
+                <span class="stats__unit">/ 5</span>
+                <span class="stats__label">Note Google · 1053 avis</span>
+            </div>
+            <div class="stats__divider"></div>
+            <div class="stats__item">
+                <span class="stats__num" data-counter="19">0</span>
+                <span class="stats__unit">h</span>
+                <span class="stats__label">de service continu</span>
+            </div>
+            <div class="stats__divider"></div>
+            <div class="stats__item">
+                <span class="stats__num">7<span class="stats__slash">/</span>7</span>
+                <span class="stats__label">7 jours sur 7</span>
+            </div>
+            <div class="stats__divider"></div>
+            <div class="stats__item">
+                <span class="stats__num" data-counter="100">0</span>
+                <span class="stats__unit">%</span>
+                <span class="stats__label">Cuisine maison</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTOIRE / MAISON -->
+    <section class="histoire" id="histoire">
+        <div class="histoire__inner">
+            <header class="section__head">
+                <div class="section__label">
+                    <span class="section__num">01</span>
+                    <span class="section__cat">La Maison</span>
+                </div>
+                <h2 class="section__title">
+                    <span data-reveal-text>On y vient</span>
+                    <span data-reveal-text class="section__title--em">pour les frites,</span>
+                    <span data-reveal-text>on y revient</span>
+                    <span data-reveal-text class="section__title--em">pour la maison.</span>
+                </h2>
+            </header>
+
+            <div class="histoire__grid">
+                <article class="histoire__story">
+                    <p class="histoire__lead">
+                        Au 20 rue du Renard, à deux pas du Centre Pompidou, Les Acrobates posent leurs valises depuis plusieurs années.
+                    </p>
+                    <p>
+                        Une brasserie comme on les aime : déco vintage assumée, lumières chaudes, banquettes patinées, et cette ambiance qui fait qu'on s'attarde un peu plus que prévu.
+                    </p>
+                    <p>
+                        Aux fourneaux, le chef <strong>Louis</strong> travaille des produits simples, généreux, et tout est fait maison. Du croque-monsieur au confit de canard, en passant par les frites coupées le matin et les tartares préparés à la commande.
+                    </p>
+                    <p>
+                        Aux manettes, <strong>Thomas</strong> accueille en patron et en hôte. Il connaît les habitués par leur prénom, raconte les vins comme on raconte des histoires, et veille à ce que chaque passage se termine sur un sourire.
+                    </p>
+
+                    <div class="histoire__chips">
+                        <span class="chip">Petit-déj 7h</span>
+                        <span class="chip">Déjeuner d'affaires</span>
+                        <span class="chip">Brunch dimanche</span>
+                        <span class="chip">Apéro 16h-21h</span>
+                        <span class="chip">Dîner tardif</span>
+                    </div>
+                </article>
+
+                <aside class="testimonial">
+                    <div class="testimonial__photo">
+                        <img src="assets/table-logo.jpg" alt="Table Les Acrobates">
+                    </div>
+                    <div class="testimonial__body">
+                        <div class="testimonial__stars" aria-label="Note 5 sur 5">★★★★★</div>
+                        <blockquote class="testimonial__quote">
+                            J'ai tout apprécié dans ce restaurant : le style et les objets de la salle, la cuisine délicieuse et l'addition raisonnable pour Paris. Je le recommande vraiment.
+                        </blockquote>
+                        <div class="testimonial__meta">
+                            <div class="testimonial__source">— Avis Tripadvisor</div>
+                            <div class="testimonial__rating">
+                                <strong>4,6 / 5</strong>
+                                <span>· 1053 avis Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLATS SIGNATURES -->
+    <section class="signatures" aria-label="Plats signature">
+        <div class="signatures__head">
+            <h2 class="signatures__title">
+                <em>Les classiques</em> de la maison
+            </h2>
+            <p class="signatures__sub">
+                Faits maison, à base de produits frais. Tous les jours.
+            </p>
+        </div>
+        <div class="signatures__rail" id="signaturesRail">
+            <article class="dish">
+                <div class="dish__media"><img src="assets/oeufs-mayo.jpg" alt="Œufs mayonnaise"></div>
+                <div class="dish__info">
+                    <h3>Œufs Mayo</h3>
+                    <p>L'incontournable parisien</p>
+                    <span class="dish__price">6 €</span>
+                </div>
+            </article>
+            <article class="dish">
+                <div class="dish__media"><img src="assets/escargots.jpg" alt="Escargots Extra Gros"></div>
+                <div class="dish__info">
+                    <h3>Escargots Extra Gros</h3>
+                    <p>Maison de l'Escargot</p>
+                    <span class="dish__price">9,5 / 18 €</span>
+                </div>
+            </article>
+            <article class="dish dish--featured">
+                <div class="dish__media"><img src="assets/tartare.jpg" alt="Tartare de bœuf"></div>
+                <div class="dish__info">
+                    <h3>Tartare de Bœuf</h3>
+                    <p>Préparé à la commande, frites maison</p>
+                    <span class="dish__price">16 €</span>
+                </div>
+            </article>
+            <article class="dish">
+                <div class="dish__media"><img src="assets/confit-canard.jpg" alt="Confit de canard"></div>
+                <div class="dish__info">
+                    <h3>Confit de Canard</h3>
+                    <p>Pommes sautées ail & persil</p>
+                    <span class="dish__price">19 €</span>
+                </div>
+            </article>
+            <article class="dish">
+                <div class="dish__media"><img src="assets/entrecote.jpg" alt="Entrecôte maturée"></div>
+                <div class="dish__info">
+                    <h3>Entrecôte 220g</h3>
+                    <p>Maturée · poivre ou roquefort</p>
+                    <span class="dish__price">22 €</span>
+                </div>
+            </article>
+            <article class="dish">
+                <div class="dish__media"><img src="assets/burger.jpg" alt="Burger des Acrobates"></div>
+                <div class="dish__info">
+                    <h3>Burger des Acrobates</h3>
+                    <p>Cheddar, bacon, confiture d'oignons</p>
+                    <span class="dish__price">17 €</span>
+                </div>
+            </article>
+            <article class="dish">
+                <div class="dish__media"><img src="assets/poisson.jpg" alt="Filet de bar"></div>
+                <div class="dish__info">
+                    <h3>Filet de Bar</h3>
+                    <p>Sauce vierge, purée maison</p>
+                    <span class="dish__price">17 €</span>
+                </div>
+            </article>
+            <article class="dish">
+                <div class="dish__media"><img src="assets/croque.jpg" alt="Croque-monsieur"></div>
+                <div class="dish__info">
+                    <h3>Croque-Madame</h3>
+                    <p>Frites maison</p>
+                    <span class="dish__price">15,5 €</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CARTE -->
+    <section class="carte" id="carte">
+        <div class="carte__inner">
+            <header class="section__head section__head--center">
+                <div class="section__label">
+                    <span class="section__num">02</span>
+                    <span class="section__cat">La Carte</span>
+                </div>
+                <h2 class="section__title section__title--center">
+                    <span data-reveal-text>Une carte de</span>
+                    <span data-reveal-text class="section__title--em">brasserie,</span>
+                    <span data-reveal-text>fidèle à</span>
+                    <span data-reveal-text class="section__title--em">la maison.</span>
+                </h2>
+                <p class="carte__intro">
+                    Tous nos plats sont faits maison, à base de produits frais. La carte évolue au fil des saisons et des inspirations du chef.
+                </p>
+            </header>
+
+            <!-- Formule midi -->
+            <div class="formula">
+                <div class="formula__top">
+                    <span class="formula__tag">Lundi → Vendredi · 12h - 15h</span>
+                    <h3 class="formula__title">Formule déjeuner · <span>16,80 €</span></h3>
+                    <p class="formula__sub">Entrée + Plat <em>ou</em> Plat + Dessert</p>
+                </div>
+                <div class="formula__grid">
+                    <div class="formula__col">
+                        <h4>Entrée</h4>
+                        <ul>
+                            <li>Œufs Mayo</li>
+                            <li>Terrine de Campagne</li>
+                            <li>Nems poulet</li>
+                        </ul>
+                    </div>
+                    <div class="formula__col">
+                        <h4>Plat</h4>
+                        <ul>
+                            <li>Suggestion du chef</li>
+                            <li>Poulet au Satay</li>
+                            <li>Bœuf Thaï et riz</li>
+                        </ul>
+                    </div>
+                    <div class="formula__col">
+                        <h4>Dessert</h4>
+                        <ul>
+                            <li>Dessert du jour</li>
+                            <li>Mousse Chocolat</li>
+                            <li>Crêpes au choix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs" id="carteTabs">
+                <div class="tabs__nav" role="tablist">
+                    <button class="tabs__btn is-active" data-tab="entrees" role="tab">Pour commencer</button>
+                    <button class="tabs__btn" data-tab="salades" role="tab">Salades signature</button>
+                    <button class="tabs__btn" data-tab="plats" role="tab">Les plats</button>
+                    <button class="tabs__btn" data-tab="burgers" role="tab">Burgers & sur le pouce</button>
+                    <button class="tabs__btn" data-tab="desserts" role="tab">Desserts maison</button>
+                </div>
+
+                <div class="tabs__panels">
+                    <article class="tabs__panel is-active" data-panel="entrees">
+                        <ul class="menu-list">
+                            <li><span>Œufs Mayo</span><span class="menu-list__dots"></span><span class="menu-list__price">6 €</span></li>
+                            <li><span>Soupe à l'Oignon gratinée</span><span class="menu-list__dots"></span><span class="menu-list__price">8,5 €</span></li>
+                            <li><span>Terrine de campagne, cornichons et salade</span><span class="menu-list__dots"></span><span class="menu-list__price">7 €</span></li>
+                            <li><span>Escargots Extra Gros · « La Maison de l'Escargot »</span><span class="menu-list__dots"></span><span class="menu-list__price">9,5 / 18 €</span></li>
+                            <li><span>Saumon fumé, crème ciboulette &amp; blinis maison</span><span class="menu-list__dots"></span><span class="menu-list__price">14,5 €</span></li>
+                            <li><span>Nems au poulet (×4)</span><span class="menu-list__dots"></span><span class="menu-list__price">7,5 €</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="tabs__panel" data-panel="salades">
+                        <ul class="menu-list">
+                            <li><span>La César · iceberg, poulet crispy, œuf, croûtons, grana padano</span><span class="menu-list__dots"></span><span class="menu-list__price">15,5 €</span></li>
+                            <li><span>Les Acrobates · poulet satay, carottes au miel, cacahuète, coriandre</span><span class="menu-list__dots"></span><span class="menu-list__price">15,5 €</span></li>
+                            <li><span>La Bœuf Thaï · bœuf mariné, soja, carottes, coriandre, concombre</span><span class="menu-list__dots"></span><span class="menu-list__price">16 €</span></li>
+                            <li><span>La Biquette · crottins de chèvre rôtis, noix, salade</span><span class="menu-list__dots"></span><span class="menu-list__price">15,5 €</span></li>
+                            <li><span>Le Bo-Bun des Acrobates · nouilles sautées, nem, sauce nuoc nam</span><span class="menu-list__dots"></span><span class="menu-list__price">16,5 €</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="tabs__panel" data-panel="plats">
+                        <ul class="menu-list">
+                            <li><span>Tartare de Bœuf, frites maison</span><span class="menu-list__dots"></span><span class="menu-list__price">16 €</span></li>
+                            <li><span>Bavette d'Aloyau, confiture d'oignons, frites maison</span><span class="menu-list__dots"></span><span class="menu-list__price">17 €</span></li>
+                            <li><span>Confit de Canard, pommes sautées à l'ail et au persil</span><span class="menu-list__dots"></span><span class="menu-list__price">19 €</span></li>
+                            <li><span>Brochette de poulet au satay, riz parfumé</span><span class="menu-list__dots"></span><span class="menu-list__price">15,5 €</span></li>
+                            <li><span>Filet de Bar, sauce vierge et purée maison</span><span class="menu-list__dots"></span><span class="menu-list__price">17 €</span></li>
+                            <li><span>Entrecôte maturée 220g, frites maison · poivre ou roquefort</span><span class="menu-list__dots"></span><span class="menu-list__price">22 €</span></li>
+                            <li><span>Wok des Acrobates · bœuf ou poulet</span><span class="menu-list__dots"></span><span class="menu-list__price">17 €</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="tabs__panel" data-panel="burgers">
+                        <ul class="menu-list">
+                            <li><span>Burger des Acrobates · cheddar, bacon, confiture d'oignons, frites</span><span class="menu-list__dots"></span><span class="menu-list__price">17 €</span></li>
+                            <li><span>Burger de la Place Beauvau · poulet crispy, cantal, sauce tartare</span><span class="menu-list__dots"></span><span class="menu-list__price">17 €</span></li>
+                            <li><span>Veggie Burger · steak de légumes maison</span><span class="menu-list__dots"></span><span class="menu-list__price">16 €</span></li>
+                            <li><span>Fish &amp; Chips, sauce tartare maison</span><span class="menu-list__dots"></span><span class="menu-list__price">16 €</span></li>
+                            <li><span>Croque-Monsieur ou Madame, frites maison</span><span class="menu-list__dots"></span><span class="menu-list__price">14,5 / 15,5 €</span></li>
+                            <li><span>Avocado toast au saumon fumé</span><span class="menu-list__dots"></span><span class="menu-list__price">14 €</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="tabs__panel" data-panel="desserts">
+                        <ul class="menu-list">
+                            <li><span>Tiramisu maison</span><span class="menu-list__dots"></span><span class="menu-list__price">7,5 €</span></li>
+                            <li><span>Mousse au Chocolat maison</span><span class="menu-list__dots"></span><span class="menu-list__price">7 €</span></li>
+                            <li><span>Moelleux au chocolat, glace vanille</span><span class="menu-list__dots"></span><span class="menu-list__price">8 €</span></li>
+                            <li><span>Crème Brûlée</span><span class="menu-list__dots"></span><span class="menu-list__price">7 €</span></li>
+                            <li><span>Crêpes maison · sucre, confiture, caramel beurre salé, Nutella</span><span class="menu-list__dots"></span><span class="menu-list__price">5 €</span></li>
+                            <li><span>La Brioche des Acrobates</span><span class="menu-list__dots"></span><span class="menu-list__price">7,5 €</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Bar / Petit-déj / Brunch -->
+            <div class="moments">
+                <article class="moment">
+                    <h4>Petit-déjeuner</h4>
+                    <p><strong>Le Parisien · 8 €</strong><br>Boisson chaude, jus pressé, tartine, croissant</p>
+                    <p><strong>L'Anglais · 12 €</strong><br>Boisson chaude, jus, toast, œufs bacon ou omelette</p>
+                </article>
+                <article class="moment moment--accent">
+                    <h4>Happy Hours</h4>
+                    <p>Lundi → Vendredi · 16h - 21h</p>
+                    <p>Pinte 5 € · Verre de vin 5 € · Cocktails 7 €</p>
+                </article>
+                <article class="moment">
+                    <h4>Brunch & Apéro</h4>
+                    <p>Brunch servi le dimanche</p>
+                    <p>Planches charcuterie, fromages affinés, tapas dès 17,5 €</p>
+                </article>
+            </div>
+
+            <p class="carte__footnote">
+                Service continu · Carte des vins, cocktails et bières disponible sur place · La maison n'accepte pas les chèques · Minimum CB 10 €
+            </p>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="galerie" id="galerie">
+        <div class="galerie__inner">
+            <header class="section__head">
+                <div class="section__label">
+                    <span class="section__num">03</span>
+                    <span class="section__cat">L'Ambiance</span>
+                </div>
+                <h2 class="section__title">
+                    <span data-reveal-text>Une déco qui</span>
+                    <span data-reveal-text class="section__title--em">raconte</span>
+                    <span data-reveal-text>et un quartier</span>
+                    <span data-reveal-text class="section__title--em">qui vit.</span>
+                </h2>
+            </header>
+
+            <div class="galerie__grid">
+                <figure class="galerie__item galerie__item--tall">
+                    <img src="assets/devanture.jpg" alt="Devanture Les Acrobates" loading="lazy">
+                    <figcaption>Devanture · 20 rue du Renard</figcaption>
+                </figure>
+                <figure class="galerie__item">
+                    <img src="assets/terrasse.jpg" alt="Terrasse face à Beaubourg" loading="lazy">
+                    <figcaption>Terrasse · vue Beaubourg</figcaption>
+                </figure>
+                <figure class="galerie__item">
+                    <img src="assets/croque.jpg" alt="Croque-Madame frites maison" loading="lazy">
+                    <figcaption>Croque-Madame</figcaption>
+                </figure>
+                <figure class="galerie__item galerie__item--wide">
+                    <img src="assets/vitrine.jpg" alt="Vitrine du restaurant" loading="lazy">
+                    <figcaption>Vitrine · ambiance vintage</figcaption>
+                </figure>
+                <figure class="galerie__item">
+                    <img src="assets/creme-brulee.jpg" alt="Crème brûlée caramélisée au chalumeau" loading="lazy">
+                    <figcaption>Crème brûlée</figcaption>
+                </figure>
+                <figure class="galerie__item">
+                    <img src="assets/poisson.jpg" alt="Filet de bar et purée maison" loading="lazy">
+                    <figcaption>Filet de bar · purée maison</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Marquee décoratif -->
+        <div class="galerie__marquee" aria-hidden="true">
+            <div class="galerie__marquee-track">
+                <span>Brasserie maison</span><span>★</span>
+                <span>Cuisine continue</span><span>★</span>
+                <span>Marais · Paris IV</span><span>★</span>
+                <span>Vintage 1900</span><span>★</span>
+                <span>Brunch dimanche</span><span>★</span>
+                <span>Brasserie maison</span><span>★</span>
+                <span>Cuisine continue</span><span>★</span>
+                <span>Marais · Paris IV</span><span>★</span>
+                <span>Vintage 1900</span><span>★</span>
+                <span>Brunch dimanche</span><span>★</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="reservation" id="reservation">
+        <div class="reservation__bg" aria-hidden="true"></div>
+        <div class="reservation__inner">
+            <div class="section__label section__label--light">
+                <span class="section__num section__num--light">04</span>
+                <span class="section__cat section__cat--light">Réservation</span>
+            </div>
+            <h2 class="reservation__title">
+                <span data-reveal-text>Réservez en</span>
+                <span data-reveal-text class="reservation__em">direct,</span>
+                <span data-reveal-text>sans intermédiaire.</span>
+            </h2>
+            <p class="reservation__sub">
+                Un coup de fil à Thomas suffit. Il prend votre table avec le sourire, sans commission, sans frais cachés.
+            </p>
+
+            <a href="tel:+33142729870" class="phone-cta" data-magnetic>
+                <span class="phone-cta__top">Cliquer pour appeler</span>
+                <span class="phone-cta__num">01 42 72 98 70</span>
+                <span class="phone-cta__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </span>
+            </a>
+
+            <div class="reservation__details">
+                <div class="reservation__detail">
+                    <span class="reservation__detail-label">Pour 1 à 30 personnes</span>
+                    <span class="reservation__detail-text">Privatisation possible sur demande</span>
+                </div>
+                <div class="reservation__detail">
+                    <span class="reservation__detail-label">Horaires d'appel</span>
+                    <span class="reservation__detail-text">Tous les jours · 7h - 1h</span>
+                </div>
+                <div class="reservation__detail">
+                    <span class="reservation__detail-label">Par email</span>
+                    <span class="reservation__detail-text"><a href="mailto:thomas@lesacrobates.fr">thomas@lesacrobates.fr</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFOS -->
+    <section class="infos" id="infos">
+        <div class="infos__inner">
+            <header class="section__head">
+                <div class="section__label">
+                    <span class="section__num">05</span>
+                    <span class="section__cat">Nous trouver</span>
+                </div>
+                <h2 class="section__title">
+                    <span data-reveal-text>Au</span>
+                    <span data-reveal-text class="section__title--em">20 rue du Renard,</span>
+                    <span data-reveal-text>face au</span>
+                    <span data-reveal-text class="section__title--em">Centre Pompidou.</span>
+                </h2>
+            </header>
+
+            <div class="infos__grid">
+                <div class="infos__col">
+                    <div class="infos__block">
+                        <span class="infos__label">Adresse</span>
+                        <p class="infos__text">20 Rue du Renard<br>75004 Paris · Le Marais</p>
+                        <a href="https://maps.google.com/?q=Les+Acrobates+20+rue+du+Renard+75004+Paris" target="_blank" rel="noopener" class="infos__link">
+                            Itinéraire Google Maps
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="infos__block">
+                        <span class="infos__label">Téléphone</span>
+                        <a href="tel:+33142729870" class="infos__phone">01 42 72 98 70</a>
+                    </div>
+
+                    <div class="infos__block">
+                        <span class="infos__label">Email</span>
+                        <a href="mailto:thomas@lesacrobates.fr" class="infos__email">thomas@lesacrobates.fr</a>
+                    </div>
+
+                    <div class="infos__block">
+                        <span class="infos__label">Horaires</span>
+                        <ul class="infos__hours">
+                            <li><span>Lundi → Samedi</span><span>7h - 2h</span></li>
+                            <li><span>Dimanche</span><span>8h - 00h</span></li>
+                        </ul>
+                        <span class="infos__pill">Service continu toute la journée</span>
+                    </div>
+
+                    <div class="infos__block">
+                        <span class="infos__label">Accès</span>
+                        <p class="infos__text">
+                            <span class="metro metro--11">Rambuteau</span> ligne 11 · 150m<br>
+                            <span class="metro metro--1">Hôtel de Ville</span> lignes 1 et 11 · 250m
+                        </p>
+                    </div>
+
+                    <div class="infos__social">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <div class="infos__map">
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=2.3490%2C48.8580%2C2.3550%2C48.8610&amp;layer=mapnik&amp;marker=48.8595%2C2.3520"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        loading="lazy"
+                        title="Localisation Les Acrobates"></iframe>
+                    <a href="https://maps.google.com/?q=20+rue+du+Renard+75004+Paris" target="_blank" rel="noopener" class="infos__map-link">
+                        Ouvrir dans Google Maps
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand-row">
+                <p class="footer__brand">Les Acrobates</p>
+                <p class="footer__tagline">Brasserie parisienne · 20 rue du Renard, Paris IV<sup>e</sup></p>
+            </div>
+
+            <div class="footer__cols">
+                <div class="footer__col">
+                    <h5>Visiter</h5>
+                    <a href="#histoire">La Maison</a>
+                    <a href="#carte">La Carte</a>
+                    <a href="#galerie">L'Ambiance</a>
+                    <a href="#infos">Nous trouver</a>
+                </div>
+                <div class="footer__col">
+                    <h5>Contact</h5>
+                    <a href="tel:+33142729870">01 42 72 98 70</a>
+                    <a href="mailto:thomas@lesacrobates.fr">thomas@lesacrobates.fr</a>
+                </div>
+                <div class="footer__col">
+                    <h5>Suivre</h5>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+                </div>
+                <div class="footer__col">
+                    <h5>Horaires</h5>
+                    <span>Lun-Sam · 7h - 2h</span>
+                    <span>Dimanche · 8h - 00h</span>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© <span id="year"></span> Les Acrobates · Tous droits réservés</p>
+                <a href="#hero" class="footer__top-link">↑ Haut de page</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
