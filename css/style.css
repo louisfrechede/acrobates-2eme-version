@@ -2324,3 +2324,14 @@ button {
     }
     .floating-cta__pulse { display: none; }
 }
+
+/* --- Section "Maison" : titre intégré à la colonne gauche --- */
+.section__head--inline {
+    margin-bottom: 1rem !important;
+    max-width: none;
+}
+
+.section__head--inline .section__title {
+    font-size: clamp(2rem, 4.5vw, 3.75rem);
+    line-height: 1.05;
+}
