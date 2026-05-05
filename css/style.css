@@ -2348,5 +2348,4 @@ a.testimonial__source {
 a.testimonial__source:hover {
     color: var(--orange-bright);
     border-bottom-color: currentColor;
-    letter-spacing: 0.18em;
 }
