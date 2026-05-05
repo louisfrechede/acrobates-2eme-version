@@ -2078,3 +2078,40 @@ button {
 
     [data-reveal-text] { opacity: 1; transform: none; }
 }
+
+/* ==========================================================================
+   ROBUSTESSE V2 — overrides pour garantir l'affichage
+   (Évite que les animations CSS/JS cassent l'affichage du contenu)
+   ========================================================================== */
+
+[data-reveal-text] {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.hero__eyebrow,
+.hero__sub,
+.hero__ctas,
+.hero__scroll {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.hero__photo {
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+.hero__sticker {
+    opacity: 1 !important;
+}
+
+/* Garantir une hauteur au conteneur photo du hero */
+.hero__right {
+    min-height: 480px;
+}
+
+@media (max-width: 980px) {
+    .hero__right { min-height: 420px; }
+}
