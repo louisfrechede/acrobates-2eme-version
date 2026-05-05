@@ -58,6 +58,12 @@
 
         // Magnetic buttons (subtle effect on desktop)
         initMagnetic();
+
+        // Floating CTA - shows after scroll, hides near reservation section
+        initFloatingCta();
+
+        // Light-follows-cursor effect on dish cards
+        initDishLight();
     }
 
     /* ----------------------------------------------------------------------
@@ -178,6 +184,60 @@
                 el.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
                 el.style.transform = 'translate(0px, 0px)';
                 setTimeout(() => { el.style.transition = ''; }, 400);
+            });
+        });
+    }
+
+    /* ----------------------------------------------------------------------
+       Floating CTA - reserve button that follows the user
+       Appears after 600px scroll, hides when reservation section is in view
+       ---------------------------------------------------------------------- */
+    function initFloatingCta() {
+        const cta = document.getElementById('floatingCta');
+        if (!cta) return;
+
+        const reservationSection = document.getElementById('reservation');
+
+        const update = () => {
+            const scrolled = window.scrollY > 600;
+
+            // Hide when reservation section is visible (avoid duplicate phone CTA)
+            let nearReservation = false;
+            if (reservationSection) {
+                const rect = reservationSection.getBoundingClientRect();
+                // section visible somewhere in viewport
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    nearReservation = true;
+                }
+            }
+
+            if (scrolled && !nearReservation) {
+                cta.classList.add('is-visible');
+                cta.classList.remove('is-hidden-near-reservation');
+            } else if (nearReservation) {
+                cta.classList.add('is-hidden-near-reservation');
+            } else {
+                cta.classList.remove('is-visible');
+            }
+        };
+
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+    }
+
+    /* ----------------------------------------------------------------------
+       Dish cards - light follows cursor (orange glow)
+       ---------------------------------------------------------------------- */
+    function initDishLight() {
+        if (window.matchMedia('(hover: none)').matches) return;
+
+        document.querySelectorAll('.dish').forEach(dish => {
+            dish.addEventListener('mousemove', (e) => {
+                const rect = dish.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                dish.style.setProperty('--mx', x + '%');
+                dish.style.setProperty('--my', y + '%');
             });
         });
     }

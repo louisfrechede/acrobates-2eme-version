@@ -248,24 +248,41 @@
                     </div>
                 </article>
 
-                <aside class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="assets/table-logo.jpg" alt="Table Les Acrobates">
-                    </div>
-                    <div class="testimonial__body">
-                        <div class="testimonial__stars" aria-label="Note 5 sur 5">★★★★★</div>
-                        <blockquote class="testimonial__quote">
-                            J'ai tout apprécié dans ce restaurant : le style et les objets de la salle, la cuisine délicieuse et l'addition raisonnable pour Paris. Je le recommande vraiment.
-                        </blockquote>
-                        <div class="testimonial__meta">
-                            <div class="testimonial__source">— Avis Tripadvisor</div>
-                            <div class="testimonial__rating">
-                                <strong>4,6 / 5</strong>
-                                <span>· 1053 avis Google</span>
+                <div class="testimonials">
+                    <aside class="testimonial">
+                        <div class="testimonial__photo">
+                            <img src="assets/table-logo.jpg" alt="Table Les Acrobates">
+                        </div>
+                        <div class="testimonial__body">
+                            <div class="testimonial__stars" aria-label="Note 5 sur 5">★★★★★</div>
+                            <blockquote class="testimonial__quote">
+                                J'ai tout apprécié dans ce restaurant : le style et les objets de la salle, la cuisine délicieuse et l'addition raisonnable pour Paris. Je le recommande vraiment.
+                            </blockquote>
+                            <div class="testimonial__meta">
+                                <div class="testimonial__source">— Avis Tripadvisor</div>
+                                <div class="testimonial__rating">
+                                    <strong>4,6 / 5</strong>
+                                    <span>· 1053 avis Google</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </aside>
+                    </aside>
+
+                    <aside class="testimonial testimonial--compact">
+                        <div class="testimonial__body">
+                            <div class="testimonial__stars" aria-label="Note 5 sur 5">★★★★★</div>
+                            <blockquote class="testimonial__quote">
+                                L'âme du quartier, la cuisine généreuse et Thomas qui nous reconnaît à chaque visite. Mon repère parisien quand je viens dans le Marais.
+                            </blockquote>
+                            <div class="testimonial__meta">
+                                <div class="testimonial__source">— Avis Google</div>
+                                <div class="testimonial__rating">
+                                    <strong>★ ★ ★ ★ ★</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
     </section>
@@ -722,6 +739,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating CTA - Bouton réserver qui suit l'utilisateur -->
+    <a href="tel:+33142729870" class="floating-cta" id="floatingCta" aria-label="Réserver une table">
+        <span class="floating-cta__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </span>
+        <span class="floating-cta__text">Réserver</span>
+        <span class="floating-cta__pulse" aria-hidden="true"></span>
+    </a>
 
     <script src="js/main.js" defer></script>
 </body>
