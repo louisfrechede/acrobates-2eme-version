@@ -2335,3 +2335,18 @@ button {
     font-size: clamp(2rem, 4.5vw, 3.75rem);
     line-height: 1.05;
 }
+
+/* --- Liens vers Tripadvisor / Google sur les témoignages --- */
+a.testimonial__source {
+    color: var(--orange-deep);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+a.testimonial__source:hover {
+    color: var(--orange-bright);
+    border-bottom-color: currentColor;
+    letter-spacing: 0.18em;
+}
