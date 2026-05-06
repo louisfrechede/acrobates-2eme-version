@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -91,7 +91,6 @@
     <nav class="nav" id="nav">
         <div class="nav__inner">
             <a href="#hero" class="nav__logo" aria-label="Les Acrobates - Accueil">
-                <span class="nav__logo-mark">L<span class="nav__logo-amp">·</span>A</span>
                 <span class="nav__logo-full">Les Acrobates</span>
             </a>
             <ul class="nav__menu">
@@ -215,7 +214,6 @@
                 <article class="histoire__story">
                     <header class="section__head section__head--inline">
                         <div class="section__label">
-                            <span class="section__num">01</span>
                             <span class="section__cat">La Maison</span>
                         </div>
                         <h2 class="section__title">
@@ -370,7 +368,6 @@
         <div class="carte__inner">
             <header class="section__head section__head--center">
                 <div class="section__label">
-                    <span class="section__num">02</span>
                     <span class="section__cat">La Carte</span>
                 </div>
                 <h2 class="section__title section__title--center">
@@ -514,19 +511,20 @@
 
     <!-- GALERIE -->
     <section class="galerie" id="galerie">
-        <div class="galerie__inner">
-            <header class="section__head">
-                <div class="section__label">
-                    <span class="section__num">03</span>
-                    <span class="section__cat">L'Ambiance</span>
+        <div class="galerie__inner galerie__inner--split">
+            <aside class="galerie__aside">
+                <div class="galerie__aside-sticky">
+                    <div class="section__label">
+                        <span class="section__cat">L'Ambiance</span>
+                    </div>
+                    <h2 class="section__title">
+                        <span data-reveal-text>Une déco qui</span>
+                        <span data-reveal-text class="section__title--em">raconte</span>
+                        <span data-reveal-text>et un quartier</span>
+                        <span data-reveal-text class="section__title--em">qui vit.</span>
+                    </h2>
                 </div>
-                <h2 class="section__title">
-                    <span data-reveal-text>Une déco qui</span>
-                    <span data-reveal-text class="section__title--em">raconte</span>
-                    <span data-reveal-text>et un quartier</span>
-                    <span data-reveal-text class="section__title--em">qui vit.</span>
-                </h2>
-            </header>
+            </aside>
 
             <div class="galerie__grid">
                 <figure class="galerie__item galerie__item--tall">
@@ -578,7 +576,6 @@
         <div class="reservation__bg" aria-hidden="true"></div>
         <div class="reservation__inner">
             <div class="section__label section__label--light">
-                <span class="section__num section__num--light">04</span>
                 <span class="section__cat section__cat--light">Réservation</span>
             </div>
             <h2 class="reservation__title">
@@ -620,21 +617,19 @@
     <!-- INFOS -->
     <section class="infos" id="infos">
         <div class="infos__inner">
-            <header class="section__head">
-                <div class="section__label">
-                    <span class="section__num">05</span>
-                    <span class="section__cat">Nous trouver</span>
-                </div>
-                <h2 class="section__title">
-                    <span data-reveal-text>Au</span>
-                    <span data-reveal-text class="section__title--em">20 rue du Renard,</span>
-                    <span data-reveal-text>face au</span>
-                    <span data-reveal-text class="section__title--em">Centre Pompidou.</span>
-                </h2>
-            </header>
-
             <div class="infos__grid">
                 <div class="infos__col">
+                    <header class="section__head section__head--inline">
+                        <div class="section__label">
+                            <span class="section__cat">Nous trouver</span>
+                        </div>
+                        <h2 class="section__title">
+                            <span data-reveal-text>Au</span>
+                            <span data-reveal-text class="section__title--em">20 rue du Renard,</span>
+                            <span data-reveal-text>face au</span>
+                            <span data-reveal-text class="section__title--em">Centre Pompidou.</span>
+                        </h2>
+                    </header>
                     <div class="infos__block">
                         <span class="infos__label">Adresse</span>
                         <p class="infos__text">20 Rue du Renard<br>75004 Paris · Le Marais</p>

@@ -183,27 +183,20 @@ button {
     color: var(--ink);
 }
 
-.nav__logo-mark {
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: -0.02em;
+.nav__logo-full {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
     color: var(--orange);
 }
 
-.nav__logo-amp {
-    font-style: italic;
+.nav.is-scrolled .nav__logo-full {
     color: var(--orange-deep);
 }
 
-.nav__logo-full {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.05rem;
-    letter-spacing: -0.01em;
-}
-
 @media (max-width: 700px) {
-    .nav__logo-full { display: none; }
+    .nav__logo-full { font-size: 1.2rem; }
 }
 
 .nav__menu {
@@ -702,34 +695,12 @@ button {
     justify-content: center;
 }
 
-.section__num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--orange);
-    color: var(--cream);
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    box-shadow: 0 4px 12px rgba(240, 78, 35, 0.3);
-}
-
 .section__cat {
     color: var(--ink-soft);
 }
 
 .section__label--light { color: rgba(251, 243, 227, 0.75); }
 .section__cat--light { color: rgba(251, 243, 227, 0.85); }
-.section__num--light {
-    background: var(--cream);
-    color: var(--orange-deep);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
 .section__title {
     font-family: var(--font-display);
@@ -816,7 +787,7 @@ button {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     gap: clamp(2.5rem, 5vw, 5rem);
-    align-items: start;
+    align-items: stretch;
 }
 
 @media (max-width: 920px) {
@@ -879,8 +850,6 @@ button {
 
 /* Testimonial card */
 .testimonial {
-    position: sticky;
-    top: 110px;
     background: var(--paper);
     border-radius: 14px;
     overflow: hidden;
@@ -1454,10 +1423,38 @@ button {
     margin-bottom: clamp(4rem, 8vw, 7rem);
 }
 
+/* Galerie en 2 colonnes : titre sticky à gauche, photos à droite */
+.galerie__inner--split {
+    display: grid;
+    grid-template-columns: 0.85fr 2fr;
+    gap: clamp(2.5rem, 6vw, 6rem);
+    align-items: start;
+}
+
+.galerie__aside {
+    position: relative;
+}
+
+.galerie__aside-sticky {
+    position: sticky;
+    top: 110px;
+}
+
+@media (max-width: 980px) {
+    .galerie__inner--split {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .galerie__aside-sticky {
+        position: static;
+    }
+}
+
 .galerie__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 220px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 240px;
+    grid-auto-flow: dense;
     gap: 1rem;
 }
 
@@ -2137,16 +2134,14 @@ button {
 
 /* --- Témoignages empilés --- */
 .testimonials {
-    position: sticky;
-    top: 110px;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    height: 100%;
 }
 
-.testimonial {
-    position: static !important;
-    top: auto !important;
+.testimonials > .testimonial:last-child {
+    flex: 1;
 }
 
 .testimonial--compact .testimonial__photo {
@@ -2174,7 +2169,7 @@ button {
 }
 
 @media (max-width: 920px) {
-    .testimonials { position: static; }
+    .testimonials { height: auto; }
 }
 
 /* --- Plats : hover orange dynamique --- */
