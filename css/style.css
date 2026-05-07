@@ -2353,7 +2353,6 @@ a.testimonial__source:hover {
 /* --- Étape 1 : zones tactiles 44 × 44 px minimum (norme Apple/Google) --- */
 @media (max-width: 720px) {
     .btn,
-    .nav__cta,
     .tabs__btn,
     .infos__link,
     .infos__phone,
@@ -2378,6 +2377,21 @@ a.testimonial__source:hover {
 
     .phone-cta {
         min-height: 64px;
+    }
+}
+
+/* --- Étape 1bis : un seul bouton "Réserver" selon l'écran --- */
+/* Sur mobile : on cache le CTA de la nav (le bouton flottant en bas suffit) */
+@media (max-width: 720px) {
+    .nav__cta {
+        display: none;
+    }
+}
+
+/* Sur desktop : on cache le bouton flottant (le CTA de la nav suffit) */
+@media (min-width: 721px) {
+    .floating-cta {
+        display: none;
     }
 }
 
