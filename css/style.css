@@ -2344,3 +2344,116 @@ a.testimonial__source:hover {
     color: var(--orange-bright);
     border-bottom-color: currentColor;
 }
+
+/* ============================================================
+   MOBILE OPTIMIZATIONS
+   Optimisations spécifiques pour smartphones et écrans tactiles
+============================================================ */
+
+/* --- Étape 1 : zones tactiles 44 × 44 px minimum (norme Apple/Google) --- */
+@media (max-width: 720px) {
+    .btn,
+    .nav__cta,
+    .tabs__btn,
+    .infos__link,
+    .infos__phone,
+    .infos__email,
+    .infos__map-link,
+    .footer__col a,
+    .footer__top-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .nav__burger {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .floating-cta {
+        min-height: 52px;
+        padding-inline: 1.1rem;
+    }
+
+    .phone-cta {
+        min-height: 64px;
+    }
+}
+
+/* --- Étape 2 : tabs de la carte scrollables horizontalement sur mobile --- */
+@media (max-width: 720px) {
+    .tabs__nav {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 0.5rem;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
+        margin-inline: calc(var(--gutter) * -1);
+        padding-inline: var(--gutter);
+    }
+
+    .tabs__nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tabs__btn {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        white-space: nowrap;
+        padding: 0.6rem 1.1rem;
+    }
+}
+
+/* --- Étape 3 : hero compact sur mobile --- */
+@media (max-width: 720px) {
+    .hero__photo--small {
+        display: none;
+    }
+
+    .hero__sticker {
+        display: none;
+    }
+
+    .hero__photo--main {
+        aspect-ratio: 4 / 3;
+        max-height: 50vh;
+    }
+
+    .hero__right {
+        order: 2;
+    }
+
+    .hero__left {
+        order: 1;
+    }
+}
+
+/* --- Étape 4 : espacements mobile resserrés --- */
+@media (max-width: 720px) {
+    :root {
+        --section-py: clamp(3rem, 9vw, 4.5rem);
+        --gutter: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    .section__head {
+        margin-bottom: 2.25rem;
+    }
+
+    .histoire__chips {
+        margin-top: 1rem;
+    }
+
+    .stats__inner {
+        gap: 1.25rem 0;
+    }
+
+    .moments {
+        gap: 1rem;
+    }
+}
+
